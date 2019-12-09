@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600,400&subset=latin,cyrillic);
+
+
+body {
+font-family: 'Philosopher', sans-serif;
+font-size: 28px;
+background-color: #ededed;
+}
+.header-1 {
+font-family: 'Amatic SC', cursive;
+font-size: 38px;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
